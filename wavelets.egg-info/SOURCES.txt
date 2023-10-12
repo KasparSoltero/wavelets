@@ -1,0 +1,7 @@
+setup.py
+wavelets/__init__.py
+wavelets/core.py
+wavelets.egg-info/PKG-INFO
+wavelets.egg-info/SOURCES.txt
+wavelets.egg-info/dependency_links.txt
+wavelets.egg-info/top_level.txt
