@@ -1,13 +1,14 @@
 Implementation of the discrete wavelet transform and associated processing functions.
 
-# functions:
+Usage: import wavelets as wl:
+
 wl.multires (Multiple-resolution analysis) repeatedly decomposes the approximate coefficients. Because the approximate coefficients represent the low frequency part of the signal,
 each level analyses a lower frequency portion of the signal.
 
     [signal]──┬─>[cD1] ┄┄┄┄┄┄┄┄┄┄┄┄┄┄[cD1]        level 1
-               └─>[cA1]──┬─>[cD2]┄┄┄┄┄[cD2]        level 2
-                       └─>[cA2]──┬─>[cD3]        level 3
-                                   └─>[cA3]
+              └─>[cA1]──┬─>[cD2]┄┄┄┄┄[cD2]        level 2
+                        └─>[cA2]──┬─>[cD3]        level 3
+                                  └─>[cA3]
 
 Each decomposition splits the signal into a higher and lower frequency component,
 so the frequencies spanned by the final sets of coefficients e.g.:
